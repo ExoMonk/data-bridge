@@ -1,0 +1,93 @@
+[
+    {
+        "data": [
+            {
+                "name": "previousOwner",
+                "type": "felt"
+            },
+            {
+                "name": "newOwner",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "l1_recipient",
+                "type": "felt"
+            },
+            {
+                "name": "payload_len",
+                "type": "felt"
+            },
+            {
+                "name": "payload",
+                "type": "felt*"
+            }
+        ],
+        "keys": [],
+        "name": "InterractedWithL1",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "l1_address",
+                "type": "felt"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [],
+        "name": "get_l1_contract",
+        "outputs": [
+            {
+                "name": "l1_address",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "l1_caller",
+                "type": "felt"
+            },
+            {
+                "name": "payload_len",
+                "type": "felt"
+            },
+            {
+                "name": "payload",
+                "type": "felt*"
+            }
+        ],
+        "name": "send_message",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "new_l1_address",
+                "type": "felt"
+            }
+        ],
+        "name": "update_l1_address",
+        "outputs": [],
+        "type": "function"
+    }
+]

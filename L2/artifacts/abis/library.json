@@ -1,0 +1,21 @@
+[
+    {
+        "data": [
+            {
+                "name": "l1_recipient",
+                "type": "felt"
+            },
+            {
+                "name": "payload_len",
+                "type": "felt"
+            },
+            {
+                "name": "payload",
+                "type": "felt*"
+            }
+        ],
+        "keys": [],
+        "name": "InterractedWithL1",
+        "type": "event"
+    }
+]
